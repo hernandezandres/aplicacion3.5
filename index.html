@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera Aplicacion</title>
+
+<!-- grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+	<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/acti.jpg','imagenes/anti.jpg','imagenes/volcan.jpg','imagenes/historia.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>informacion sobre el volcan Popocatepetl</h1>
+   </div>
+<!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="visor/data1/images/acti.jpg" alt="1" title="1" id="wows1_0"/></li>
+<li><img src="visor/data1/images/anti.jpg" alt="2" title="2" id="wows1_1"/></li>
+<li><img src="visor/data1/images/eru.jpg" alt="3" title="3" id="wows1_2"/></li>
+<li><img src="visor/data1/images/vol.jpg" alt="4" title="4" id="wows1_3"/></li>
+<li><img src="visor/data1/images/volcan.jpg" alt="5" title="5" id="wows1_4"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="1"><img src="visor/data1/tooltips/acti.jpg" alt="1"/>1</a>
+<a href="#" title="2"><img src="visor/data1/tooltips/anti.jpg" alt="2"/>2</a>
+<a href="#" title="3"><img src="visor/data1/tooltips/eru.jpg" alt="3"/>3</a>
+<a href="#" title="4"><img src="visor/data1/tooltips/vol.jpg" alt="4"/>4</a>
+<a href="#" title="5"><img src="visor/data1/tooltips/volcan.jpg" alt="5"/>5</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Gallery Slider</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+       
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-"a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>UBICACION</h2>
+<p>clic para ver información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>TAMAÑO</h2>
+<p>clic para ver información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>ANTIGUEDAD</h2>
+<p>clic para ver información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>MEDIDAS PREVENTIVAS</h2>
+<p>clic para ver información</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>HISTORIA</h2>
+<P>clic para ver información</P>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>ACTIVIDAD VOLCANICA</h2>
+<P>clic para ver información</P>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>MONITOREO</h2>
+<P>clic para ver información</P>
+</a>
+</li>
+</ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a">
+<div>
+<img src="imagenes/persona_azul.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion Dos</h4>
+<h4>ANDRES HERNANDEZ NEJATENGO</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Semana Santa</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h1>ubicacion</h1>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/acti.jpg',1)"><img src="imagenes/anti.jpg" width="275" height="183" id="Image10"></a></p>
+<h3>El Popocatépetl (en náhuatl: popocatepetl, ‘el cerro que humea’‘popoca, humear; tepetl, cerro’)? es un volcán activo localizado en el centro de México, en los límites territoriales de los estados de Morelos, Puebla y México. Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.3
+  
+  Tiene una forma cónica simétrica y está unido por la parte norte con el Iztaccíhuatl mediante un paso montañoso conocido como Paso de Cortés. El volcán tiene glaciares perennes cerca de la boca del cono, en la punta de la montaña. Es el segundo volcán más alto de México, con una altitud máxima de 5500 metros sobre el nivel del mar, sólo después del Citlaltépetl de 5610 msnm.1 2</h3>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion dos, AHN</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Cuaresma</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>tamaño del volcan Popocatépetl</h2>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('popo','','imagenes/anti.jpg',1)"><img src="imagenes/eru.jpg" width="480" height="360" id="popo"></a></p>
+<h3>El cráter interno del volcán Popocatéptl aumentó su tamaño probablemente por la destrucción del domo y los derrumbes de sus paredes, informó este miércoles el Centro Nacional de Prevención de Desastres (Cenapred).
+  
+  El aumento el diámetro del cráter interno, formado en julio de 2013, se pudo observar gracias a un sobrevuelo de la Policía Federal, personal del Cenapred y de la Coordinación Nacional de Protección Civil.
+  
+  El diámetro se estima ahora en 350 metros, mientras que el fondo del cráter interno se encuentra a unos 100 metros por debajo del piso del cráter principal.
+  
+  La mayor parte de las emisiones de vapor de agua provienen de una grieta en la pared noreste del cráter interno, mientras que las emisiones con ceniza, de un color gris pardo, se originan en el fondo, en la zona cubierta de tefra.</h3>
+
+</div>
+</div>
+<div data-role="footer" data-theme="a">
+<h4>Aplicacion Dos, AHN</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>ANTIGUEDAD</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>ANTIGUEDAD</h2>
+<h3>El Popocatépetl es un estratovolcán, y los estudios paleomagnéticos que se han hecho de él indican que tiene una edad aproximada de 730 000 años. Su altura es de 5500 msnm, es de forma cónica, tiene un diámetro de 25 km en su base y la cima es el corte elíptico de un cono y tiene una orientación noreste-suroeste. La distancia entre las paredes de su cráter varía entre los 660 y los 840 m.<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('volcan','','imagenes/volcan.jpg',1)"><img src="imagenes/vol.jpg" width="980" height="735" id="volcan"></a></h3>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, AHN</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>medidas preventivas</h1>
+</div>
+<div data-role="content" align="center">
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>En caso de caida de seniza</h1>
+      <div>
+      <p>No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado
+Mantén la calma.
+Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.
+No realices actividades al aire libre y si es posible no salgas.
+Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.
+Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.
+Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.
+Ten a la mano una linterna y pilas.
+La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.
+Cubre tinacos, cisternas y depósitos de agua.
+Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.
+Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.
+Ante la caída de ceniza volcánica evita consumir alimentos en la vía pública.
+Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al ingresar a tu casa se recomienda cambiar de ropa.
+Durante la caída de ceniza volcánica, evita que los menores realicen actividades al aire libre.
+Mantén a tus mascotas en un lugar techado al igual que sus alimentos. Si tus macotas salen, cepíllalos antes de permitirles la entrada nuevamente.
+La ceniza puede ser usada para parques, jardines, macetas o tierras de cultivo, ya que es rica en minerales.
+No repitas ni difundas rumores. La ciudad de Puebla se encuentra a una distancia segura, no intentes salir.
+Usa las vías de comunicación solo en caso de ser necesario.</p>
+      <br>
+      </div>
+    <div>
+       <img src="imagenes/pre.jpg" width="50%" height="50%"> 
+       </div>
+       </div>
+       </div>
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>erupcion</h1>
+      <div>
+      <p>Mantente alejado de volcanes activos.
+Si vives cerca de un volcán activo, prepara un kit de emergencia que incluya gafas de seguridad, una máscara, una linterna y una radio en buen estado que funcione con pilas.
+Elabora una ruta de evacuación y ten el depósito de gasolina del coche siempre lleno.
+Evacua siguiendo las recomendaciones de las autoridades para no encontrarte lava y barro, así como rocas y escombros que puede arrojar el volcán.
+Evita zonas de ríos y regiones bajas.
+Antes de abandonar tu casa, ponte una camisa de manga larga y pantalones largos; usa gafas de seguridad o normales, sin lentillas. Ponte una máscara de emergencia o envuélvete la cara con un paño húmedo.
+Si no vas a evacuar, cierra puertas y ventanas, y bloquea la chimenea y otros puntos de ventilación para evitar que la ceniza entre en la casa.
+Ten en cuenta que la ceniza puede sobrecargar el tejado y puedes necesitar retirarla. Durante la limpieza, lleva elementos de protección
+La ceniza puede dañar motores y piezas metálicas, así que evita conducir. Si debes conducir, no superes los 55 kilómetros por hora.</p>
+      <br>
+      </div>
+    <div>
+      <img src="imagenes/eru.jpg" width="50%" height="50%"> </div>
+       </div>
+       </div>
+<div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>estados afectados</h1>
+      <div>
+      <p>Zonas de riesgo por erupción del volcán Popocatépetl:
+
+1. Estado de México
+2. Puebla	 	3. Morelos
+4. Tlaxcala </p>
+      <br>
+      </div>
+    <div>
+     <img src="imagenes/estados.jpg" width="50%" height="50%"> </div>
+       </div>
+       </div>
+
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos, AHN</h4>
+</div>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>historia</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h3>  
+Cuenta la leyenda…que cuando los aztecas dominaban a los demás pueblos del Valle de México, el cacique de Tlaxcala, cansado de tanta opresión, decidió declararles la guerra. En medio de este caos bélico surgió el amor entre el guerrero Popocatepetl, y la princesa Iztaccihuatl. Antes de partir a la guerra el valiente guerrero pide la mano de la princesa. Un rival guerrero de Popocatepetl, y enamorado también de la princesa, inventa que Popocatepetl ha muerto. La princesa al conocer la noticia muere de pena. Popocatepetl regresa triunfante de las batallas, sólo para saber la muerte de su amada. El inconsolable guerrero cogió a la princesa en brazos y se la llevó a las montañas. Mandó construir con 20000 esclavos una gran tumba frente al sol amontonando diez cerros, y formando así una gran montaña. Depositó ahí a su amada y la lloró durante varios días y noches, hasta que se quedó dormido del cansancio y dolor. Los dioses tuvieron compasión de ellos, los cubrieron de nieve y los convirtieron en dos grandes volcanes. Iztaccihuatl proviene de iztac, que significa blanco y cihuatl que significa mujer. El monte se conoce como mujer dormida, porque la silueta del volcán asemeja esa forma. Popocatepetl viene de popoa : humo y tepetl que significa cerro. Se puede traducir como monte humeante, y así es ya que el volcán a veces despierta, y ve a su amada muerta junto a él. Abrumado por el dolor vuelve a gritar y se ve desde lejos su dolor.<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('historia','','imagenes/historia.jpg',1)"><img src="imagenes/histo.jpg" width="200" height="266" id="historia"></a></h3>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Dos,AHN</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>actividad volcanica</h1>
+</div>
+<div data-role="content" align="center">
+<h3> Durante las últimas horas, el sistema de monitoreo del volcán Popocatépetl registró una explosión, dos eventos volcanotectónicos y 118 exhalaciones, que estuvieron acompañadas de vapor de agua y gas.
+
+El Centro Nacional de Prevención de Desastres (Cenapred) especificó que la explosión en el coloso ocurrió a las 16:52 horas del jueves y alcanzó una altura de mil metros sobre el nivel del cráter y en dirección al noroeste.
+
+En su reporte más reciente, indicó que los dos eventos volcanotectónicos se registraron a las 17:25 y 19:18 horas del jueves con magnitudes de 2.6 y 2.2, respectivamente.
+
+El organismo dependiente de la Secretaría de Gobernación refirió que durante la noche sólo se observó incandescencia en el cráter durante la emisión de algunas exhalaciones y permanece la alerta en Amarillo Fase 2.
+
+Reiteró que continúa la restricción para acercarse a un radio menor de 12 kilómetros del cráter y el tránsito controlado entre Santiago Xalitzintla, Puebla, y San Pedro Nexapa, Estado de México, vía Paso de Cortés.
+
+Añadió que las autoridades de Protección Civil mantendrán sus procedimientos preventivos, de acuerdo con sus planes operativos. </h3>
+<img src="imagenes/acti.jpg" width="530" height="330">
+<div data-role="footer" data-theme="a" data position="fixed">
+<h4>Aplicacion dos, AHN</h4>
+</div>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>actividad volcanica</h1>
+</div>
+<div data-role="content" align="center">
+<h3> 
+México se encuentra situado en una región con importante actividad volcánica. De los 3,000 volcanes que aproximadamente tiene el país, 14 son considerados activos. El país ha vivido actividades recientes de volcanes que han presentado fases eruptivas importantes, algunas con consecuencias desastrosas, ejemplo de ello son el Paricutín, en Michoacán, que hizo erupción en 1943, el Chichón, en Chiapas, en 1982; el Tacaná, en Chiapas, en 1986 y el volcán de Colima, el cual ha tenido episodios de gran actividad en los últimos años. La prueba más reciente se vivió a finales de 1994 cuando el volcán Popocatépetl, pasó de una fase moderada de actividad a una de gran actividad sísmica y fumarólica con abundante emisión de gases, cenizas, extrusión de lava e incluso producción de flujos piroclásticos durante los eventos eruptivos de mayo y junio de 1997.
+El Popocatépetl, es un estratovolcán andesítico-dacítico, localizado a 60 km al sureste de la Ciudad de México y a 45 km al oeste de la Ciudad de Puebla. Tiene una altura de 5452 msnm y un cráter de 900 m de diámetro y aprox. 200 m de profundidad. Su edificio cubre un área de 500 km2 abarcando los estados de Puebla, México y Morelos. </h3>
+<img src="imagenes/moni.jpg" width="530" height="330">
+</div>
+</div>
+<div data-role="footer" data-theme="a" data position="fixed">
+<h4>Aplicacion dos, AHN</h4>
+</div>
+</div>
+</div>
+
+</body>
+</html>
